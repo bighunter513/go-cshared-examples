@@ -27,7 +27,7 @@ int main(int argc, char **argv) {
     }
     // call Add()
     go_int sum = (*add)(12, 99); 
-    printf("awesome.Add(12, 99) = %d\n", sum);
+    printf("awesome.Add(12, 99) = %lld\n", sum);
 
     // resolve Cosine symbol
     go_float64 (*cosine)(go_float64) = dlsym(handle, "Cosine");
@@ -51,7 +51,7 @@ int main(int argc, char **argv) {
     sort(nums);
     printf("awesome.Sort(44,23,7,66,2): ");
     for (int i = 0; i < 5; i++){
-        printf("%d,", ((go_int *)data)[i]);
+        printf("%lld,", ((go_int *)data)[i]);
     }
     printf("\n");
 

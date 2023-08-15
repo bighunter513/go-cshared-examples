@@ -7,7 +7,7 @@ int main() {
     //Call Add() - passing integer params, interger result
     GoInt a = 12;
     GoInt b = 99;
-    printf("awesome.Add(12,99) = %d\n", Add(a, b)); 
+    printf("awesome.Add(12,99) = %lld\n", Add(a, b)); 
 
     //Call Cosine() - passing float param, float returned
     printf("awesome.Cosine(1) = %f\n", (float)(Cosine(1.0)));
@@ -18,7 +18,7 @@ int main() {
     Sort(nums);
     printf("awesome.Sort(77,12,5,99,28,23): ");
     for (int i = 0; i < 6; i++){
-        printf("%d,", ((GoInt *)nums.data)[i]);
+        printf("%lld,", ((GoInt *)nums.data)[i]);
     }
     printf("\n");
 
